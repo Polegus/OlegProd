@@ -9,7 +9,7 @@ public class FireGun : MonoBehaviour
     [SerializeField] GameObject _patron;
     [SerializeField] GameObject[] _spawnPos;
     [SerializeField] GameObject _effectFire;
-    [SerializeField] GameObject _canvas;
+ //   [SerializeField] GameObject _canvas;
     [SerializeField] float _kofSpeed;
     [SerializeField] float _kofStrenght;
     [SerializeField] float _kofDistance;
@@ -54,7 +54,7 @@ public class FireGun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        StartGame();
         _animator = GetComponent<Animator>();
         StateParamGun?.Invoke();
     }
@@ -126,7 +126,7 @@ public class FireGun : MonoBehaviour
         else if (gameObject.name == "Gun6")
             SetState(PlayerResurs1.Gun6, ParamGun);
         paramGun();
-        _canvas.SetActive(false);
+    //    _canvas.SetActive(false);
         _animator.enabled = true;
         StartCoroutine(DoCheck());
     }
@@ -135,11 +135,10 @@ public class FireGun : MonoBehaviour
     {
         while (ParamGuns.Speed > 0)
         {
-            if (!_startFire)
-            {
+            
                 yield return new WaitForSeconds(1f);
                 _startFire = true;
-            }
+            
 
             yield return new WaitForSeconds(60f / ParamGuns.Speed);
             Fire();

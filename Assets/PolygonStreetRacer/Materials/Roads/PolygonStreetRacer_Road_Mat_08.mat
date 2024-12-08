@@ -25,15 +25,15 @@ Material:
     m_TexEnvs:
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: -1, y: -100}
+        m_Scale: {x: -2, y: -100}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: b19a69c7319663a43bf6f98db4dc9255, type: 3}
-        m_Scale: {x: -1, y: -100}
+        m_Scale: {x: -2, y: -100}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.79622644, g: 0.79622644, b: 0.79622644, a: 1}
+    - _Color: {r: 0.53396225, g: 1, b: 0.8370697, a: 1}
     - _EmissionColor: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
   m_BuildTextureStacks: []
