@@ -9,7 +9,7 @@ public class FireGun : MonoBehaviour
     [SerializeField] GameObject _patron;
     [SerializeField] GameObject[] _spawnPos;
     [SerializeField] GameObject _effectFire;
- //   [SerializeField] GameObject _canvas;
+    //   [SerializeField] GameObject _canvas;
     [SerializeField] float _kofSpeed;
     [SerializeField] float _kofStrenght;
     [SerializeField] float _kofDistance;
@@ -18,6 +18,14 @@ public class FireGun : MonoBehaviour
     public static event Action StateParamGun;
     bool _startFire = false;
     int _fireBigSpeed = 0;
+    float _refreshGun = 5f;
+
+    void FireTurrel()
+    {
+
+        Instantiate(_patron, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation);
+        Instantiate(_effectFire, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
+    }
 
     void Fire()
     {
@@ -54,9 +62,9 @@ public class FireGun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartGame();
-        _animator = GetComponent<Animator>();
-        StateParamGun?.Invoke();
+        //StartGame();
+      //  _animator = GetComponent<Animator>();
+      //  StateParamGun?.Invoke();
     }
 
     public void BonusWeapon()
@@ -87,18 +95,27 @@ public class FireGun : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager1.StartAnim += StartGame;
+       /* GameManager1.StartAnim += StartGame;
         BonusWeapon();
-        StateParamGun?.Invoke();
+        StateParamGun?.Invoke();*/
     }
+
+    
 
     private void OnDisable()
     {
-        GameManager1.StartAnim -= StartGame;
+        /*GameManager1.StartAnim -= StartGame;*/
     }
     // Update is called once per frame
     void Update()
     {
+        if (_refreshGun - _kofSpeed < 0)
+        {
+            FireTurrel();
+            _refreshGun = 5f;
+        }
+        else
+            _refreshGun -= _kofSpeed * Time.deltaTime;
 
     }
 
@@ -126,7 +143,7 @@ public class FireGun : MonoBehaviour
         else if (gameObject.name == "Gun6")
             SetState(PlayerResurs1.Gun6, ParamGun);
         paramGun();
-    //    _canvas.SetActive(false);
+        //    _canvas.SetActive(false);
         _animator.enabled = true;
         StartCoroutine(DoCheck());
     }
@@ -135,10 +152,10 @@ public class FireGun : MonoBehaviour
     {
         while (ParamGuns.Speed > 0)
         {
-            
-                yield return new WaitForSeconds(1f);
-                _startFire = true;
-            
+
+            yield return new WaitForSeconds(1f);
+            _startFire = true;
+
 
             yield return new WaitForSeconds(60f / ParamGuns.Speed);
             Fire();

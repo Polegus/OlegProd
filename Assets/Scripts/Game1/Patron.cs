@@ -11,7 +11,7 @@ public class Patron : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _rigidbody.AddForce(new Vector3(0, 0, _speed*100));
-        Destroy(gameObject, ParamGuns.Distance/200f);
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerEnter(Collider other)

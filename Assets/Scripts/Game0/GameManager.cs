@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _donatWindow;
     [SerializeField] Text _lvlNow;
     Shop _shop;
+
+    ChangeTurrel _changeTurrel;
     public static bool GameStart;
     Animator _carsAnimator;
     SaveProgress _save;
@@ -47,16 +49,27 @@ public class GameManager : MonoBehaviour
     }
 
     private void Start()
-    {   
+    {
+        _changeTurrel = GameObject.Find("Turrels").GetComponent<ChangeTurrel>();
         _save = GetComponent<SaveProgress>();
         GameStart = false;
         _shop = GetComponent<Shop>();
-        _carsAnimator = GameObject.Find("Cars").GetComponent<Animator>();
+       // _carsAnimator = GameObject.Find("Tank").GetComponent<Animator>();
         _lvlNow.text = PlayerResurs.lvlNow.ToString();
         PlayerResurs.SpeedUpPlayer = PlayerResurs.SpeedUp;
         RewVideoInt = PlayerResurs.lvlNow;
         if (PlayerResurs.lvlNow > 4)
             _review.SetActive(true);
+    }
+
+    public void NextGun()
+    {
+        _changeTurrel.NextTurrel();
+    }
+
+    public void PrevGun() 
+    {
+        _changeTurrel.PrevTurrel();
     }
     public void StartGame()
     {
@@ -69,7 +82,7 @@ public class GameManager : MonoBehaviour
 
         YandexGame.savesData.Golds = PlayerResurs.Golds;
         YandexGame.savesData.SpeedUp = PlayerResurs.SpeedUp;
-        YandexGame.SaveProgress();
+     //   YandexGame.SaveProgress();
     }
     
     public void VideoReward()
@@ -118,7 +131,7 @@ public class GameManager : MonoBehaviour
     {
         YandexGame.savesData.Golds = PlayerResurs.Golds;
         YandexGame.savesData.SpeedUp = PlayerResurs.SpeedUp;
-        YandexGame.SaveProgress();
+       // YandexGame.SaveProgress();
         SceneManager.LoadScene(1);
     }
     public void RefreshLvl()
@@ -132,7 +145,7 @@ public class GameManager : MonoBehaviour
     {
         YandexGame.savesData.Golds = PlayerResurs.Golds;
         YandexGame.savesData.SpeedUp = PlayerResurs.SpeedUp;
-        YandexGame.SaveProgress();
+     //   YandexGame.SaveProgress();
         
         SceneManager.LoadScene(2 + value);
     }
