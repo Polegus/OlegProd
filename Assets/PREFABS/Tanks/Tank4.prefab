@@ -1066,7 +1066,7 @@ MonoBehaviour:
   _patron: {fileID: 4056132665388335469, guid: 591e96cc47d87574ea981555a3754e16, type: 3}
   _spawnPos:
   - {fileID: 5618733385851450518}
-  _effectFire: {fileID: 100000, guid: 64cb5d05e7c58244a903fc34af064e04, type: 3}
+  _effectFire: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
   _kofSpeed: 4
   _kofStrenght: 10
   _kofDistance: 10
@@ -7140,7 +7140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7900393394135634218
 Transform:
   m_ObjectHideFlags: 0
@@ -12841,7 +12841,7 @@ MonoBehaviour:
   _patron: {fileID: 4056132665388335469, guid: 591e96cc47d87574ea981555a3754e16, type: 3}
   _spawnPos:
   - {fileID: 781337167016730991}
-  _effectFire: {fileID: 100000, guid: 3b6fcafc1005945448c42c23b890fe32, type: 3}
+  _effectFire: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
   _kofSpeed: 4
   _kofStrenght: 10
   _kofDistance: 10

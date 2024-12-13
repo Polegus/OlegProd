@@ -1999,9 +1999,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 351354114174598111, guid: 6b6d3fdaa018c954296d9e6c8c999a75, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 4067707407659263866, guid: 6b6d3fdaa018c954296d9e6c8c999a75, type: 3}
       propertyPath: m_Name
       value: Tank7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5608476109217237346, guid: 6b6d3fdaa018c954296d9e6c8c999a75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9018101531251523152, guid: 6b6d3fdaa018c954296d9e6c8c999a75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2043,6 +2051,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9173031957411644643, guid: 6b6d3fdaa018c954296d9e6c8c999a75, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2064,7 +2076,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1101242599167317816, guid: a9fa9978e8740384f86e5d7cafd9fa50, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 1602003651637081334, guid: a9fa9978e8740384f86e5d7cafd9fa50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303835999043175061, guid: a9fa9978e8740384f86e5d7cafd9fa50, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2124,6 +2144,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8595513400059413933, guid: a9fa9978e8740384f86e5d7cafd9fa50, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 8631064195689184374, guid: a9fa9978e8740384f86e5d7cafd9fa50, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2210,6 +2234,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4321280520997084730, guid: e15633570f8f2fc469eede70d56273ed, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 6289695423107083814, guid: e15633570f8f2fc469eede70d56273ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2250,6 +2278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6915795074790706054, guid: e15633570f8f2fc469eede70d56273ed, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 8580462275636982523, guid: e15633570f8f2fc469eede70d56273ed, type: 3}
       propertyPath: m_Name
       value: Tank8
@@ -2366,6 +2398,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (tank)
       objectReference: {fileID: 0}
+    - target: {fileID: 4048874158092710845, guid: 56343ad6977df434f9868e698c8ad013, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
+    - target: {fileID: 5883506218891587985, guid: 56343ad6977df434f9868e698c8ad013, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 7056787530076019723, guid: 56343ad6977df434f9868e698c8ad013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2419,6 +2459,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2075645590591316524, guid: a981ed1d333e0bb419675ba7ccfc1528, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
+    - target: {fileID: 3495194835324912889, guid: a981ed1d333e0bb419675ba7ccfc1528, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657175912170053224, guid: a981ed1d333e0bb419675ba7ccfc1528, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 7906472309835324731, guid: a981ed1d333e0bb419675ba7ccfc1528, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2463,6 +2515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank6
       objectReference: {fileID: 0}
+    - target: {fileID: 8939543816511595087, guid: a981ed1d333e0bb419675ba7ccfc1528, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2476,6 +2532,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945593459405194637, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3005697296288826521, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422614996663423279, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 5505548791388861490, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2516,9 +2584,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7026031421511691034, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 7347864572966437233, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
       propertyPath: m_Name
       value: Tank2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347864572966437233, guid: 6fde6a14d73128247a18959660b885bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2533,9 +2609,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2608291335300908896, guid: 8edff7f61cf1a5c43aea012a060dd843, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5528252833801534891, guid: 8edff7f61cf1a5c43aea012a060dd843, type: 3}
       propertyPath: m_Name
       value: Tank4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528252833801534891, guid: 8edff7f61cf1a5c43aea012a060dd843, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7900393394135634218, guid: 8edff7f61cf1a5c43aea012a060dd843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2543,7 +2627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900393394135634218, guid: 8edff7f61cf1a5c43aea012a060dd843, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.28
+      value: -0.361
       objectReference: {fileID: 0}
     - target: {fileID: 7900393394135634218, guid: 8edff7f61cf1a5c43aea012a060dd843, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2687,10 +2771,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6417881588787574832, guid: 1f412015e88ef78489361a2e6e04ca20, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 7249391148300631933, guid: 1f412015e88ef78489361a2e6e04ca20, type: 3}
       propertyPath: m_Name
       value: Tank3
       objectReference: {fileID: 0}
+    - target: {fileID: 7249391148300631933, guid: 1f412015e88ef78489361a2e6e04ca20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327098481125311156, guid: 1f412015e88ef78489361a2e6e04ca20, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2704,10 +2800,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1611452722570315844, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3910815987978852716, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
       propertyPath: m_Name
       value: Tank5
       objectReference: {fileID: 0}
+    - target: {fileID: 3910815987978852716, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828608081324671645, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
+    - target: {fileID: 6036700741690344941, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6529152473627085552, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
+      propertyPath: _effectFire
+      value: 
+      objectReference: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
     - target: {fileID: 7052804527192356189, guid: 519fc27b0ffa087448c88f1c9c9d93b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
