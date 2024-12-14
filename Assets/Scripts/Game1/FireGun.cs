@@ -10,7 +10,7 @@ public class FireGun : MonoBehaviour
     [SerializeField] GameObject[] _spawnPos;
     [SerializeField] GameObject _effectFire;
     //   [SerializeField] GameObject _canvas;
-    [SerializeField] float _kofSpeed;
+    [SerializeField] [Range(1f, 4.9f)] float _kofSpeed;
     [SerializeField] float _kofStrenght;
     [SerializeField] float _kofDistance;
     Animator _animator;
