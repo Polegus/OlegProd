@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 19800000}
   - component: {fileID: 19900000}
   - component: {fileID: 11400000}
-  - component: {fileID: 2085622707836336027}
+  - component: {fileID: 6028693633735337042}
   m_Layer: 0
   m_Name: Hit1
   m_TagString: Untagged
@@ -4736,7 +4736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnlyDeactivate: 0
---- !u!82 &2085622707836336027
+--- !u!82 &6028693633735337042
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4746,7 +4746,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 569c512c793e88442abadfad1b3be53d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 20604575733aa6e4ba7581ec3b502313, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
