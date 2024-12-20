@@ -43,7 +43,7 @@ public class Scaner : MonoBehaviour
 
         }
 
-        if (other.gameObject.name.Contains("Gun"))
+        if (other.gameObject.name.Contains("Turrel"))
         {
             ParamGuns _paramGun = other.GetComponent<ParamGuns>();
             _paramGun.GetDamage(20f);

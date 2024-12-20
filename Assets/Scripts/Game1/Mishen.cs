@@ -18,7 +18,7 @@ public class Mishen : MonoBehaviour
             Destroy(_glavGameObject);
         }
 
-        if (other.gameObject.name.Contains("Gun"))
+        if (other.gameObject.name.Contains("Turrel"))
         {
             ParamGuns _paramGun = other.GetComponent<ParamGuns>();
             _paramGun.GetDamage(10f);

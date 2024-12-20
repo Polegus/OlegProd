@@ -13,7 +13,7 @@ public class OpenZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("Gun"))
+        if (other.gameObject.name.Contains("Turrel"))
         {
             _zone.SetActive(true);
         }

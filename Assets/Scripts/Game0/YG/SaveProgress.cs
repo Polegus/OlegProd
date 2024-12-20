@@ -189,7 +189,7 @@ public class SaveProgress : MonoBehaviour
                 //child.gameobject contains the current child you can do whatever you want like add it to an array\
                 for (int i = 0; i < 44; i++)
                 {
-                    if (child.gameObject.name == "Gun" + i + "(Clone)")
+                    if (child.gameObject.name == "Turrel" + i + "(Clone)")
                     {
                         YandexGame.savesData.SceneFruits.Add(i);
                         YandexGame.savesData.SceneFruitsPositions.Add(child.gameObject.transform.position.x);
@@ -234,7 +234,7 @@ public class SaveProgress : MonoBehaviour
     {
         for (int i = 0; i < valueMC.Count; i++)
         {
-            valueYG["Gun" + i.ToString()] = valueMC["Gun" + i.ToString()];
+            valueYG["Turrel" + i.ToString()] = valueMC["Turrel" + i.ToString()];
         }
     }
 

@@ -31,7 +31,7 @@ public class FinishScript : MonoBehaviour
         _result.text = record.ToString();
         if (PlayerResurs1.Record < record)
         {
-            YandexGame.NewLeaderboardScores("GunGame", record);
+            YandexGame.NewLeaderboardScores("TurrelGame", record);
             YandexGame.savesData.Record = record;
             PlayerResurs1.Record = record;
             _record.text = PlayerResurs1.Record.ToString();

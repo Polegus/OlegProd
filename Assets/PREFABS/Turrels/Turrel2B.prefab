@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8142084879775313901}
   - component: {fileID: 2569942007626408572}
   - component: {fileID: 2088172580494593783}
+  - component: {fileID: 8837041619901100498}
   m_Layer: 0
   m_Name: Turrel2B
   m_TagString: Untagged
@@ -105,6 +106,27 @@ MonoBehaviour:
   _kofSpeed: 4
   _kofStrenght: 10
   _kofDistance: 10
+--- !u!65 &8837041619901100498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3233060757620796618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3799603, y: 0.53436, z: 1.8154954}
+  m_Center: {x: 0, y: 0.26718, z: 1.32}
 --- !u!1 &4628898710644074959
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,10 +234,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5627925621670296571}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.0009, y: 0.393, z: 1.353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 640308635247446842}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}

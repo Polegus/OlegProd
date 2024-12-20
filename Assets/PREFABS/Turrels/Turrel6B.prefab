@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5145671253505733661}
   - component: {fileID: 714154221384980122}
   - component: {fileID: 6966125017368131058}
+  - component: {fileID: 3469934693588419953}
   m_Layer: 0
   m_Name: Turrel6B
   m_TagString: Untagged
@@ -190,6 +191,27 @@ MonoBehaviour:
   _kofSpeed: 2.2
   _kofStrenght: 10
   _kofDistance: 10
+--- !u!65 &3469934693588419953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007959794736774259}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.086704, y: 1.3188965, z: 4.022334}
+  m_Center: {x: 0.011522766, y: 0.659448, z: 1.32}
 --- !u!1 &3463365206030481279
 GameObject:
   m_ObjectHideFlags: 0

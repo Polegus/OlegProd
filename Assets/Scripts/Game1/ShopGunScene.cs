@@ -131,7 +131,7 @@ public class ShopGunScene : MonoBehaviour
     {
         if (int.Parse(_priceProduct.text) <= PlayerResurs1.Golds)
         {
-            if (_shopWindow[ShopWindowNow].name.Contains("Gun"))
+            if (_shopWindow[ShopWindowNow].name.Contains("Turrel"))
             {
                 BuyProduct();
                 PlayerResurs1.PlayerGuns.Add(PlayerResurs1.GunNow);
@@ -171,7 +171,7 @@ public class ShopGunScene : MonoBehaviour
     {
         if (int.Parse(_priceProductAlmaz.text) <= PlayerResurs1.Almaz)
         {
-            if (_shopWindow[ShopWindowNow].name.Contains("Gun"))
+            if (_shopWindow[ShopWindowNow].name.Contains("Turrel"))
             {
                 BuyProductAlmaz();
                 PlayerResurs1.PlayerGuns.Add(PlayerResurs1.GunNow);
@@ -209,7 +209,7 @@ public class ShopGunScene : MonoBehaviour
 
     public void ChoiseProduct()
     {
-        if (_shopWindow[ShopWindowNow].name.Contains("Gun"))
+        if (_shopWindow[ShopWindowNow].name.Contains("Turrel"))
         {
 
             PlayerResurs1.GunChoise = PlayerResurs1.GunNow;
@@ -409,7 +409,7 @@ public class ShopGunScene : MonoBehaviour
 
     void CheckStateWindow()
     {
-        if (_shopWindow[ShopWindowNow].name.Contains("Gun"))
+        if (_shopWindow[ShopWindowNow].name.Contains("Turrel"))
         {
             setStateProduct(PlayerResurs1.PlayerGuns, PlayerResurs1.GunNow, PlayerResurs1.GunChoise);
             PlayerResurs1.GunNow = PlayerResurs1.GunChoise - 1;

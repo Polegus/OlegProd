@@ -20,7 +20,7 @@ public class NewCubes : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("Gun"))
+        if (other.gameObject.name.Contains("Turrel"))
             if (_isActive)
             {
 

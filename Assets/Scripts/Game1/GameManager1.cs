@@ -18,7 +18,6 @@ public class GameManager1 : MonoBehaviour
     [SerializeField] GameObject _setting;
     [SerializeField] GameObject _bonusGold;
     [SerializeField] GameObject _review;
-    [SerializeField] MoveGun _moveGun;
     [SerializeField] FinishScript _finish;
     [SerializeField] GameObject _donatWindow;
     [SerializeField] Text _lvlNow;
@@ -65,7 +64,6 @@ public class GameManager1 : MonoBehaviour
         _buttonsLvl.SetActive(false);
         _numLvlButton.SetActive(false);
         GameStart = true;
-        _moveGun.enabled = true;
        // _carsAnimator.enabled = false;
         _bonusGold.SetActive(true);
         _goldForLvl.SetActive(true);

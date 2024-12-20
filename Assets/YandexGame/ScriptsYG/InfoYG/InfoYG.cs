@@ -377,8 +377,8 @@ namespace YG
         {
             new Purchase
             {
-                id = "gun",
-                title = "Gun",
+                id = "Turrel",
+                title = "Turrel",
                 description = "Product - Gun",
                 imageURI = "https://justplaygames.ru/public/Paymant1.png",
                 priceValue = "5",

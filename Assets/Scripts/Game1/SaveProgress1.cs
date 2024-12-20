@@ -158,8 +158,6 @@ public class SaveProgress1 : MonoBehaviour
 
         PlayerResurs1.SceneFruits.Clear();
         PlayerResurs1.SceneFruitsPositions.Clear();
-        LoadScene();
-        InstantiateObj();
         YandexGame.savesData.SceneFruits.Clear();
         YandexGame.savesData.SceneFruitsPositions.Clear();
     }
@@ -193,37 +191,14 @@ public class SaveProgress1 : MonoBehaviour
     }
 
 
-    void LoadScene()
-    {
-        for (int i = 0; i < YandexGame.savesData.SceneFruits.Count; i++)
-        {
+    
 
-            PlayerResurs1.SceneFruits.Add(YandexGame.savesData.SceneFruits[i]);
-
-        }
-        for (int i = 0; i < YandexGame.savesData.SceneFruitsPositions.Count; i++)
-        {
-
-            PlayerResurs1.SceneFruitsPositions.Add(YandexGame.savesData.SceneFruitsPositions[i]);
-
-        }
-    }
-
-    void InstantiateObj()
-    {
-        for (int i = 0; i < PlayerResurs1.SceneFruits.Count; i++)
-        {
-
-            Instantiate(_savesFruitsPref[PlayerResurs1.SceneFruits[i]], new Vector3(PlayerResurs1.SceneFruitsPositions[i * 3], PlayerResurs1.SceneFruitsPositions[i * 3 + 1], PlayerResurs1.SceneFruitsPositions[i * 3 + 2]), Quaternion.identity, _bascet.transform);
-
-
-        }
-    }
+   
     void getParamGame(Dictionary<string, float> valueYG, Dictionary<string, float> valueMC)
     {
         for (int i = 0; i < valueMC.Count; i++)
         {
-            valueYG["Gun" + i.ToString()] = valueMC["Gun" + i.ToString()];
+            valueYG["Turrel" + i.ToString()] = valueMC["Turrel" + i.ToString()];
         }
     }
 

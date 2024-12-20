@@ -17,7 +17,7 @@ public class PatronEnemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("Gun"))
+        if (other.gameObject.name.Contains("Turrel"))
         {
             ParamGuns _paramGun = other.GetComponent<ParamGuns>();
             _paramGun.GetDamage(10f);

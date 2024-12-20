@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 7735434730136006798}
   - component: {fileID: 6993837751859689621}
   - component: {fileID: 4582890360284166239}
+  - component: {fileID: 542054829283426267}
   m_Layer: 0
   m_Name: Turrel3B
   m_TagString: Untagged
@@ -308,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8998615772856578268}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.252661, z: -0.7365193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -388,6 +389,27 @@ MonoBehaviour:
   _kofSpeed: 4
   _kofStrenght: 10
   _kofDistance: 10
+--- !u!65 &542054829283426267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998615772856578268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1406274, y: 0.7938384, z: 2.5247152}
+  m_Center: {x: 0, y: 0.3969189, z: 1.32}
 --- !u!1001 &949329439873396005
 PrefabInstance:
   m_ObjectHideFlags: 0

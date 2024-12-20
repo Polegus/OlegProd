@@ -36,7 +36,7 @@ public class ObjectPrefab : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name.Contains("Gun"))
+        if (collision.gameObject.name.Contains("Turrel"))
         {
             if (ParamGuns.StateFinish)
             {

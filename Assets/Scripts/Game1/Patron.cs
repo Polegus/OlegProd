@@ -16,7 +16,7 @@ public class Patron : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.name.Contains("Coin") && !other.gameObject.name.Contains("Gun"))
+        if (!other.gameObject.name.Contains("Coin") && !other.gameObject.name.Contains("Turrel"))
             Destroy(gameObject);
     }
     

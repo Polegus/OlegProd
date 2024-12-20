@@ -38,7 +38,7 @@ public class Gates2 : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Guns")
+        if (other.gameObject.name.Contains("Turrel"))
         {
             if (gameObject.name.Contains("Gates0"))
             {

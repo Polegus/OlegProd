@@ -10,7 +10,7 @@ public class FireGun : MonoBehaviour
     [SerializeField] GameObject[] _spawnPos;
     [SerializeField] GameObject _effectFire;
     //   [SerializeField] GameObject _canvas;
-    [SerializeField] [Range(1f, 4.9f)] float _kofSpeed;
+    [SerializeField] float _kofSpeed;
     [SerializeField] float _kofStrenght;
     [SerializeField] float _kofDistance;
     Animator _animator;
@@ -33,55 +33,51 @@ public class FireGun : MonoBehaviour
         {
             Instantiate(_patron, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation);
             if (ParamGuns.Speed < 800f)
-                Instantiate(_effectFire, _spawnPos[1].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
+                Instantiate(_effectFire, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
             else
             {
                 if (_fireBigSpeed % 2 == 0)
-                    Instantiate(_effectFire, _spawnPos[1].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
+                    Instantiate(_effectFire, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
                 _fireBigSpeed++;
 
             }
         }
         else
         {
-            Instantiate(_patron, _spawnPos[1].transform.position, _spawnPos[0].transform.rotation);
+            Instantiate(_patron, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation);
             if (ParamGuns.Speed < 800f)
-                Instantiate(_effectFire, _spawnPos[1].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
+                Instantiate(_effectFire, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
             else
             {
                 if (_fireBigSpeed % 2 == 0)
-                    Instantiate(_effectFire, _spawnPos[1].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
+                    Instantiate(_effectFire, _spawnPos[0].transform.position, _spawnPos[0].transform.rotation, gameObject.transform);
                 _fireBigSpeed++;
             }
         }
-        if (ParamGuns.Speed < 240f)
-            _animator.SetTrigger("Fire");
-        else
-            _animator.SetTrigger("Fire3");
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        //StartGame();
-      //  _animator = GetComponent<Animator>();
-      //  StateParamGun?.Invoke();
+        StartGame();
+        StateParamGun?.Invoke();
     }
 
     public void BonusWeapon()
     {
-        if (gameObject.name == "Gun")
+        if (gameObject.name == "Turrel1")
             ParamGun = PlayerResurs1.Gun0;
-        else if (gameObject.name == "Gun1")
+        else if (gameObject.name == "Turrel2")
             ParamGun = PlayerResurs1.Gun1;
-        else if (gameObject.name == "Gun2")
+        else if (gameObject.name == "Turrel3")
             ParamGun = PlayerResurs1.Gun2;
-        else if (gameObject.name == "Gun3")
+        else if (gameObject.name == "Turrel4")
             ParamGun = PlayerResurs1.Gun3;
-        else if (gameObject.name == "Gun4")
+        else if (gameObject.name == "Turrel5")
             ParamGun = PlayerResurs1.Gun4;
-        else if (gameObject.name == "Gun5")
+        else if (gameObject.name == "Turrel6")
             ParamGun = PlayerResurs1.Gun5;
-        else if (gameObject.name == "Gun6")
+        else if (gameObject.name == "Turrel7")
             ParamGun = PlayerResurs1.Gun6;
 
     }
@@ -95,30 +91,18 @@ public class FireGun : MonoBehaviour
 
     private void OnEnable()
     {
-       /* GameManager1.StartAnim += StartGame;
         BonusWeapon();
-        StateParamGun?.Invoke();*/
+        StateParamGun?.Invoke();
     }
 
     
 
     private void OnDisable()
     {
-        /*GameManager1.StartAnim -= StartGame;*/
+        
     }
     // Update is called once per frame
-    void Update()
-    {
-        if (_refreshGun - _kofSpeed < 0)
-        {
-            FireTurrel();
-            _refreshGun = 5f;
-        }
-        else
-            _refreshGun -= _kofSpeed * Time.deltaTime;
-
-    }
-
+   
     void SetState(List<int> first, List<int> two)
     {
         for (int i = 0; i < 3; i++)
@@ -128,23 +112,21 @@ public class FireGun : MonoBehaviour
     }
     void StartGame()
     {
-        if (gameObject.name == "Gun")
+        if (gameObject.name == "Turrel1")
             SetState(PlayerResurs1.Gun0, ParamGun);
-        else if (gameObject.name == "Gun1")
+        else if (gameObject.name == "Turrel2")
             SetState(PlayerResurs1.Gun1, ParamGun);
-        else if (gameObject.name == "Gun2")
+        else if (gameObject.name == "Turrel3")
             SetState(PlayerResurs1.Gun2, ParamGun);
-        else if (gameObject.name == "Gun3")
+        else if (gameObject.name == "Turrel4")
             SetState(PlayerResurs1.Gun3, ParamGun);
-        else if (gameObject.name == "Gun4")
+        else if (gameObject.name == "Turrel5")
             SetState(PlayerResurs1.Gun4, ParamGun);
-        else if (gameObject.name == "Gun5")
+        else if (gameObject.name == "Turrel6")
             SetState(PlayerResurs1.Gun5, ParamGun);
-        else if (gameObject.name == "Gun6")
+        else if (gameObject.name == "Turrel7")
             SetState(PlayerResurs1.Gun6, ParamGun);
         paramGun();
-        //    _canvas.SetActive(false);
-        _animator.enabled = true;
         StartCoroutine(DoCheck());
     }
 
@@ -153,7 +135,7 @@ public class FireGun : MonoBehaviour
         while (ParamGuns.Speed > 0)
         {
 
-            yield return new WaitForSeconds(1f);
+            
             _startFire = true;
 
 
