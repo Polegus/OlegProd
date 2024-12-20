@@ -5,7 +5,7 @@ public class DriveTank : MonoBehaviour
     [SerializeField] Transform _turrel;
     [SerializeField] float _speedForward = 10f;
     Rigidbody _rb;
-
+    GameManager gameManager;
     float _oldMousePositionX;
     float _eulerY;
     // Start is called before the first frame update
@@ -21,7 +21,8 @@ public class DriveTank : MonoBehaviour
     }
     void FixedUpdate()
     {
-        _rb.AddForce(transform.forward * _speedForward);
+        if (GameManager1.GameStart)
+            _rb.AddForce(transform.forward * _speedForward);
     }
 
 
@@ -29,20 +30,22 @@ public class DriveTank : MonoBehaviour
     void Drive()
     {
 
+        
+            if (Input.GetMouseButtonDown(0))
+                _oldMousePositionX = Input.mousePosition.x;
 
-        if (Input.GetMouseButtonDown(0))
-            _oldMousePositionX = Input.mousePosition.x;
+            if (Input.GetMouseButton(0))
+            {
+                float deltaX = Input.mousePosition.x - _oldMousePositionX;
+                _oldMousePositionX = Input.mousePosition.x;
 
-        if (Input.GetMouseButton(0))
-        {
-            float deltaX = Input.mousePosition.x - _oldMousePositionX;
-            _oldMousePositionX = Input.mousePosition.x;
+                _eulerY += deltaX * 0.15f;
+                _eulerY = Mathf.Clamp(_eulerY, -38, 38);
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, _eulerY, transform.eulerAngles.z);
+                _turrel.eulerAngles = new Vector3(_turrel.eulerAngles.x, 0f, _turrel.eulerAngles.z);
+            }
+        
 
-            _eulerY += deltaX * 0.15f;
-            _eulerY = Mathf.Clamp(_eulerY, -38, 38);
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, _eulerY, transform.eulerAngles.z);
-            _turrel.eulerAngles = new Vector3(_turrel.eulerAngles.x, 0f, _turrel.eulerAngles.z);
-        }
 
 
     }

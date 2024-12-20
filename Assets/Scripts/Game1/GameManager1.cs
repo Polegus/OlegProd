@@ -61,6 +61,7 @@ public class GameManager1 : MonoBehaviour
     }
     public void StartGame()
     {
+        
         _buttonsLvl.SetActive(false);
         _numLvlButton.SetActive(false);
         GameStart = true;
