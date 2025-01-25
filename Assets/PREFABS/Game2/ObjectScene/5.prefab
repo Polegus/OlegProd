@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18d2ab3ade59034486f8f7117a9e064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healf: 100000
+  _healf: 20000
   _reward: {fileID: 4770854483221832623, guid: cb58ef0024ca8424a86f003701fc966c, type: 3}
   _healfBar: {fileID: 6113620759650220328}
   _object: {fileID: 8882860724269009267}

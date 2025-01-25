@@ -333,7 +333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5271209087769222022
 Transform:
   m_ObjectHideFlags: 0
@@ -418,9 +418,9 @@ MonoBehaviour:
   _spawnPos:
   - {fileID: 680927075790346631}
   _effectFire: {fileID: 100000, guid: 3b6fcafc1005945448c42c23b890fe32, type: 3}
-  _kofSpeed: 4
-  _kofStrenght: 10
-  _kofDistance: 10
+  _kofSpeed: 5
+  _kofStrenght: 30
+  _kofDistance: 25
 --- !u!65 &6333303439658123686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.26258674, y: 0.2934947, z: 0.23220976}
-  m_Center: {x: -0.0004921592, y: 0.14674708, z: 1.32}
+  m_Center: {x: -0.0004921592, y: 0.26, z: 1.74}
 --- !u!1 &7822146702883827275
 GameObject:
   m_ObjectHideFlags: 0

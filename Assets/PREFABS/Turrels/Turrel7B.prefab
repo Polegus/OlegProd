@@ -299,7 +299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2573846514403953544
 Transform:
   m_ObjectHideFlags: 0
@@ -386,9 +386,9 @@ MonoBehaviour:
   _spawnPos:
   - {fileID: 3906291041608674389}
   _effectFire: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
-  _kofSpeed: 4
-  _kofStrenght: 10
-  _kofDistance: 10
+  _kofSpeed: 3.5
+  _kofStrenght: 140
+  _kofDistance: 50
 --- !u!65 &7661054555494452265
 BoxCollider:
   m_ObjectHideFlags: 0
