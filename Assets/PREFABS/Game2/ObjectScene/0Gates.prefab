@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18d2ab3ade59034486f8f7117a9e064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healf: 200
+  _healf: 2000
   _reward: {fileID: 0}
   _healfBar: {fileID: 1927402351327031715}
   _object: {fileID: 5527358858935553940}
@@ -56,6 +56,7 @@ MonoBehaviour:
   _effectTouch: {fileID: 1750940742320366, guid: dca2833188279954bb91c497f04d8e7f, type: 3}
   _destroyGun: {fileID: 0}
   _healfBonusCube: {fileID: 0}
+  _destroyBool: 0
 --- !u!54 &4757339787315855896
 Rigidbody:
   m_ObjectHideFlags: 0

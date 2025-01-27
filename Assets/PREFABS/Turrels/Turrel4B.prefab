@@ -219,7 +219,7 @@ MonoBehaviour:
   _spawnPos:
   - {fileID: 379718030250431561}
   _effectFire: {fileID: 100000, guid: 2ab63887ace488b45acee59a2d4f7bb0, type: 3}
-  _kofSpeed: 8
+  _kofSpeed: 5
   _kofStrenght: 65
   _kofDistance: 30
 --- !u!65 &5985837969194554661

@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18d2ab3ade59034486f8f7117a9e064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healf: 200
+  _healf: 2000
   _reward: {fileID: 0}
   _healfBar: {fileID: 537053840427645423}
   _object: {fileID: 6448063003439175714}

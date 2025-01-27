@@ -1,5 +1,5 @@
 {
-    "idSave": 947,
+    "idSave": 1013,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
@@ -12,9 +12,9 @@
     ],
     "Help": false,
     "Record": 82.0,
-    "Golds": 722,
+    "Golds": 776,
     "Almaz": 10,
-    "lvlNow": 8,
+    "lvlNow": 14,
     "GarageObj": [],
     "PlayerWheel": [
         0
@@ -68,7 +68,7 @@
         0
     ],
     "Gun6": [
-        1,
+        0,
         0,
         0
     ],
