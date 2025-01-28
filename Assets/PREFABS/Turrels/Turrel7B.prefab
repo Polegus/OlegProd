@@ -386,8 +386,8 @@ MonoBehaviour:
   _spawnPos:
   - {fileID: 3906291041608674389}
   _effectFire: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
-  _kofSpeed: 2.5
-  _kofStrenght: 200
+  _kofSpeed: 3
+  _kofStrenght: 240
   _kofDistance: 30
 --- !u!65 &7661054555494452265
 BoxCollider:
